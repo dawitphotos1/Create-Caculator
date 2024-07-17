@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemorphism calci</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+    
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+    
+        <!-- Move the buttons outside of the rows -->
+        <div class="row">
+            <div class="degreeRadian">
+            <button class="option-btn" id="degree-btn">Degree</button>
+            <button class="option-btn" id="radian-btn">Radian</button>
+           </div>
+            <!-- Rows of buttons -->
+            <div class="row">
+                <button id="ce" onclick="backspc()">CE</button>
+                <button onclick="fact()">n!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" onclick="screen.value=''">AC</button>
+            </div>
+    
+            <div class="row">
+                <button onclick="sin()">sin</button>
+                <button onclick="pi()">π</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">÷</button>
+            </div>
+    
+            <div class="row">
+                <button onclick="cos()">cos</button>
+                <button onclick="log()">ln</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">×</button>
+            </div>
+    
+            <div class="row">
+                <button onclick="tan()">tan</button>
+                <button onclick="sqrt()">√</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">-</button>
+            </div>
+    
+            <div class="row">
+                <button onclick="e()">e</button>
+                <button onclick="pow()">exp <span style="position: relative; bottom: .4em; right: .1em;"></span> </button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn">+</button>
+            </div>
+        </div>
+    </div>
+    <h2>SCIENTIFIC <br><span>Calculator</span><br>By Dawit  <br> </h2>
+    
+       <script src="./js/scripts.js"></script>
+</body>   
+</html>
